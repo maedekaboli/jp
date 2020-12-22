@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/vendors/img/header/favicon.ico">
+
+    <title>
+        چرا جریان؟
+    </title>
+
+    <meta name="description" content="دلایل و نحوه کارکرد جریان">
+
+    <meta property="og:title" content="چرا جریان؟" />
+    <meta property="og:description" content="آپتایم‌فلو یک سرویس مانیتورینگ وبسایت است که به صاحبان سرویس‌های اینترنتی و وبسایت‌ها امکان بررسی و مانیتور لحظه‌ای وضعیت وبسایت، شبکه و api خود را می دهد.">
+    <meta property="og:image" content="/jaryan/jlogo-dark.png" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendors/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+    <!-- flaticon styles -->
+    <link href="/vendors/icons/flaticon.css" rel="stylesheet">
+
+    <!-- flaticon styles -->
+    <link href="/vendors/icons-t/flaticon.css" rel="stylesheet">
+
+    <!-- main template styles -->
+    <link href="/vendors/css/main.css" rel="stylesheet">
+
+    <!-- idanifont styles -->
+    <link href="/vendors/css/idanifonts.css" rel="stylesheet">
+
+    <!-- bootstrap offcanvas styles -->
+    <link href="/vendors/css/bootstrap.offcanvas.min.css" rel="stylesheet">
+
+    <!-- fontawesome styles -->
+    <link href="/vendors/css/fontawesome-all.min.css" rel="stylesheet">
+
+    <!-- animate styles -->
+    <link href="/vendors/css/animate.css" rel="stylesheet">
+
+    <!-- responsive template styles -->
+    <link href="/vendors/css/responsive.css" rel="stylesheet">
+
+    <!-- flickity Stylesheets -->
+    <link rel="stylesheet" href="/vendors/css/flickity.min.css">
+
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="/vendors/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/vendors/owlcarousel/assets/owl.theme.default.min.css">
+
+    <!-- technology icon Stylesheets -->
+    <link rel="stylesheet" href="/vendors/technology-icon/flaticon.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155088313-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-155088313-1');
+    </script>
+
+
+</head>
+
+
+<body>
+
+    <!-- start modal video -->
+    <div class="modal fade" id="videomodal" tabindex="-1" role="dialog" aria-labelledby="videomodal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+         </button>
+
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" id="video"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal video -->
+
+    <!-- start preloader -->
+    <div class="preloader">
+        <svg class="spinner" id="pageloader_anime" width="32px" height="32px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+              <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+          </svg>
+    </div>
+    <!-- end preloader -->
+
+
+    <!-- start header -->
+    <div id="header" class="homepagetwostyle d-flex mx-auto flex-column not-index-headerv2">
+        <!-- start search block -->
+        <div class="search-header-block">
+
+            <form id="pitursrach-header" name="formsearch" method="get" action="404.html">
+                <input name="s" id="search" type="text" class="text" value="" placeholder="START TYPING AND PRESS ENTER TO SEARCH">
+                <button type="submit" class="submit"><span class="fa fa-search"></span></button>
+                <a class="closesrch-her-block np-dsp-block">
+                    <span class="first-stright"></span>
+                    <span class="second-stright"></span>
+                </a>
+            </form>
+
+        </div>
+        <!-- end search block -->
+
+        <!-- start header animations -->
+        <div class="header-animation">
+            <div id="particles-bg"></div>
+
+
+            <!-- if you want to not display the video background delete those line -->
+            <div class="video-bg-nuhost-header">
+                <div id="video_cover"></div>
+                <video autoplay muted loop><source src="media/coodiv-vid.mp4" type="video/mp4"></video>
+                <span class="video-bg-nuhost-header-bg"></span>
+            </div>
+            <!-- if you want to not display the video background delete those line -->
+
+
+        </div>
+        <!-- end header animations -->
+
+
+        <div class="top-header-nav-home">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light header-nav-algo-coodiv header-nav-algo-coodiv-v2">
+                    <!-- start logo place -->
+                    <a class="navbar-brand" href="/">
+                        <img class="black-bg-logo" src="/jaryan/jlogo-white.png" alt="" />
+                        <!-- black background logo -->
+                        <img class="white-bg-logo" src="/jaryan/jlogo-dark.png" alt="" />
+                        <!-- white background logo -->
+                        <span>اتوماتیک کردن کارها</span>
+                    </a>
+                    <!-- end logo place -->
+                    <button class="navbar-toggle offcanvas-toggle menu-btn-span-bar ml-auto" data-toggle="offcanvas" data-target="#offcanvas-menu-home">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <!-- start collapse navbar -->
+                    <div class="collapse navbar-collapse navbar-offcanvas" id="offcanvas-menu-home">
+                        <!-- start navbar -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/why">
+                                    چرا جریان؟
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/apps">
+                                    اپ‌ها
+                                </a>
+                            </li>
+                            
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pricing">
+                                    تعرفه‌ها
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown" href="#" id="helpdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">دانشنامه  <span class="caret"></span></a>
+                                <div class="dropdown-menu" aria-labelledby="helpdropdown">
+                                    <a class="dropdown-item" href="#">
+                                        دانشنامه
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        سوالات متداول
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        وبلاگ
+                                    </a>
+
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">تماس باما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="tooltip" data-placement="bottom" title="جستوجو" class="search-headr" href="#"><img src="/vendors/img/svgs/search.svg" alt="" /></a>
+                            </li>
+
+                        </ul>
+                        <!-- end navbar -->
+
+                    </div>
+                    <!-- end collapse navbar -->
+
+                    <!-- start header account  -->
+                    <ul class="account-place-header-nav">
+                        <li class="nav-item dropdown">
+                            <a data-toggle="dropdown" aria-haspopup="true" id="customarea" aria-expanded="false" class="accouting-h dropdown-toggle" href="#"><img src="/vendors/img/svgs/avatar.svg" alt="" /></a>
+                            <div class="dropdown-menu login-drop-down-header" aria-labelledby="customarea">
+
+                                <form action="#" data-form="validate">
+
+                                    <div class="form-group">
+                                        <input type="email" name="username" placeholder="پست الکترونیکی" class="form-control" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="password" name="password" placeholder="رمز عبور" class="form-control" required>
+                                    </div>
+
+                                    <p class="help-block"><a href="#">رمز خود را فراموش کرداید ؟</a> <a href="#">ثبت نام</a></p>
+                                    <button type="submit" class="btn btn-block btn-default text-uppercase">ورود</button>
+
+                                </form>
+
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end header account  -->
+
+                </nav>
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end main header section -->
+    </div>
+
+
+    <section class="padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center about-us-page-title">
+                    <h6 class="about-us-page-title-title">اتوماتیک کردن امور تکراری برای شما</h6>
+                    <h2 class="about-us-page-title-sub-title">
+                        چرا باید از جریان استفاده کنید؟
+                    </h2>
+                    <p class="about-us-page-title-text">
+                        ما معتقدیم اتوماتیک کردن کارهای تکراری، راهی برای تعالی بشر و کمکی برای انجام دادن کارهای خلاقانه تر است بجای کارهای سخت و طاقت فرسا.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="row question-area-page justify-content-left mr-tp-120">
+                <div class="col-md-12 rtl">
+                    <div class="question-area-answer-banner">
+                        <div class="question-area-answer-banner-text">
+                            <h5>وظیفه ما پشیتبانی از شماست <br> در ۲۴/۷ ساعت شبانه روز <span>در کمتر از 3 دقیقه جوابتان را دریافت کنید.</span></h5>
+                        </div>
+                    </div>
+
+                    <div class="question-area-answer-body">
+                        <ul>
+                            <li id="go-to-qst-01">
+                                <a href="/how">
+                                    جریان چطور کار می‌کند؟
+                                </a>
+                                <p>
+                                    ابتدا از نحوه کارکرد جریان بدانید
+                                </p>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer-coodiv-thm pding-200">
+        <!-- start footer section -->
+        <div class="container">
+            <!-- start container -->
+            <div class="row justify-content-center">
+                <!-- start row -->
+
+                <div class="col-md-4">
+                    <!-- col -->
+                    <a class="footer-brand" href="#">
+                        <img src="/uf/uflogo-white.png">
+                    </a>
+
+                    <a class="footer-contact-a-hm"><i class="fas fa-life-ring"></i>-</a>
+                    <!-- phone nubmer -->
+                    <a class="footer-contact-a-hm"><i class="fas fa-microphone"></i>info@uptimeflow.com</a>
+                    <!-- email -->
+                    <a class="footer-contact-a-hm"><i class="fas fa-map-marker-alt"></i> تهران - تهران
+        
+        </a>
+                    <!-- address -->
+                </div>
+                <!-- end col -->
+
+                <div class="col-md-2 quiq-links-footer-mb-st">
+                    <!-- col -->
+                    <h5 class="footer-title-simple">سرویس‌ها</h5>
+                    <!-- title -->
+                    <ul class="main-menu-footer-mn">
+                        <li><a href="/">صفحه اصلی </a></li>
+                        <!-- link -->
+                        <li><a href="#">آپتایم مانیتورینگ</a></li>
+                        <!-- link -->
+                        <li><a href="#">نوتیفیکیشن</a></li>
+                        <!-- link -->
+                        <li><a href="#">مانتیورینگ سرور</a></li>
+                        <!-- link -->
+                        <li><a href="#">راهنماها</a></li>
+                        <!-- link -->
+                    </ul>
+                </div>
+                <!-- end col -->
+
+                <div class="col-md-2 quiq-links-footer-mb-st">
+                    <!-- col -->
+                    <h5 class="footer-title-simple">درباره ما</h5>
+                    <!-- title -->
+                    <ul class="main-menu-footer-mn">
+                        <li><a href="#">درباره ما</a></li>
+                        <!-- link -->
+                        <li><a href="/wiki">دانشنامه</a></li>
+                        <!-- link -->
+                        <li><a href="#"> تماس با ما</a></li>
+                        <!-- link -->
+                        <li><a href="#">وبلاگ</a></li>
+                        <!-- link -->
+                    </ul>
+                </div>
+                <!-- end col -->
+
+
+                <div class="col-md-3 stay-in-tch-footer-mb-st">
+                    <!-- col -->
+                    <h5 class="footer-title-simple">نماد اعتمادالکترونیکی</h5>
+                    <!-- title -->
+                    <img src="/vendors/img/homepage/enamad.png" alt="eNamad" usemap="#Map">
+                    <map name="Map">
+                                <area shape="rect" coords="95,18,178,135" href="#">
+                                <area shape="rect" coords="2,19,89,131" href="#">
+                                </map>
+                    <div class="footer-social-links">
+                        <!-- social icons -->
+                        <!-- <a class="facebookcc" href="#"><i class="fab fa-facebook-f"></i></a> -->
+                        <a class="twittercc" href="https://twitter.com/uptimeflow"><i class="fab fa-twitter"></i></a>
+                        <!-- <a class="googlecc" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a class="dribbblecc" href="#"><i class="fab fa-dribbble"></i></a> -->
+                    </div>
+                    <!-- end social icons -->
+                    <p class="copyright-footer-p">A mismatched production</p>
+                    <!-- copyright text -->
+
+                </div>
+                <!-- end col -->
+
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+
+    <!------------------- JavaScript ------------------->
+
+    <!-- jquery -->
+    <script src="/vendors/js/jquery.min.js"></script>
+
+    <!-- popper JavaScript -->
+    <script src="/vendors/js/popper.min.js"></script>
+
+    <!-- bootstrap JavaScript -->
+    <script src="/vendors/js/bootstrap.min.js"></script>
+
+    <!-- waypoints JavaScript -->
+    <script src="/vendors/js/waypoints.min.js"></script>
+
+    <!-- counterup JavaScript -->
+    <script src="/vendors/js/jquery.counterup.min.js"></script>
+
+    <!-- particles JavaScript -->
+    <script src="/vendors/js/particles-code.js"></script>
+
+    <!-- typed JavaScript -->
+    <script src="/vendors/js/typed.js"></script>
+
+    <!-- smoothscroll JavaScript -->
+    <script src="/vendors/js/smoothscroll.js"></script>
+
+    <!-- carousel JavaScript -->
+    <script src="/vendors/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- parallax JavaScript -->
+    <script src="/vendors/js/parallax.min.js"></script>
+
+    <!-- bootstrap offcanvas -->
+    <script src="/vendors/js/bootstrap.offcanvas.min.js"></script>
+
+    <!-- flickity JavaScript -->
+    <script src="/vendors/js/flickity.pkgd.min.js"></script>
+
+    <!-- template JavaScript -->
+    <script src="/vendors/js/scripts.js"></script>
+
+    <!-- mailer JavaScript -->
+    <script src="/vendors/js/mailer.js"></script>
+
+    <!-- touchSwipe JavaScript -->
+    <script src="/vendors/js/jquery.touchSwipe.min.js"></script>
+
+    <!-- countdown JavaScript -->
+    <script src="/vendors/js/jquery.countdown.min.js"></script>
+
+    <!-- modal video JavaScript -->
+    <script src="/vendors/js/modal-video.min.js"></script>
+
+    <!-- particles JavaScript -->
+    <script src="/vendors/js/particles.js"></script>
+
+    <!-- filters JavaScript -->
+    <script src="/vendors/js/mixitup.min.js"></script>
+
+    <!-- video background JavaScript -->
+    <script src="/vendors/js/video-bg.js"></script>
+
+    <!------------------- End javaScript ------------------->
+
+</body>
+<!-- end of body tag -->
+
+</html>
+<!-- end of html tag -#>
