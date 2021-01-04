@@ -75,7 +75,7 @@
 	
 -------------------------------------------------------------------*/
 
-@import url(css/idanifonts.css);
+@import url(/vendors/css/idanifonts.css);
 
 /*------------------------------------------------------------------
 	1. General Styles
@@ -179,7 +179,11 @@ button,
 }
 
 .rtl {
-    direction: rtl;
+    direction: rtl !important;
+}
+
+button:focus {
+    outline: none;
 }
 
 .pad-bt-100 {
@@ -5220,13 +5224,8 @@ button,
     color: #a8aeb1;
 }
 
-a.about-us-contact-way {
-    margin-top: 30px;
-    display: inline-block;
+.about-us-contact-way {
     font-family: 'iranyekan', sans-serif;
-    letter-spacing: 1px;
-    margin-left: 10px;
-    margin-right: 10px;
     font-size: 15px;
     background: #f0f2f3;
     padding: 7px 33px;
@@ -6412,12 +6411,13 @@ a.about-us-contact-way {
     font-weight: bold;
 }
 
+
 .help-center-box-item {
+    cursor: pointer;
     background: #fff;
-    padding: 25px;
-    border: 1px solid #e0e4e6;
+    width: 100%;
+    padding: 15px;
     border-radius: 6px;
-    margin-top: 20px;
     display: -ms-flexbox;
     display: flex;
     position: relative;
@@ -6486,25 +6486,6 @@ a.about-us-contact-way {
     display: block;
 }
 
-.help-center-box-item .help-center-box-link {
-    position: absolute;
-    left: -60px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 40px;
-    width: 40px;
-    background: #ec407a;
-    text-align: center;
-    line-height: 40px;
-    font-size: 15px;
-    color: #fff;
-    border-radius: 40px;
-}
-
-.help-center-box-item:hover .help-center-box-link {
-    left: 40px;
-}
 
 .immediate-help-center-title {
     font-weight: 700;
@@ -8191,4 +8172,225 @@ a.settingbutton i {
         color: #fff6a9;
         text-shadow: 0 0 3px #e5bb6f, 0 0 10px #ddb367, 0 0 15px #e5b04f, 0 0 30px #e5aa3e, 0 0 50px #ff0000, 0 0 6px #ff8d00, 0 0 90px #ff0000;
     }
+}
+
+.owl-stage {
+    float: left
+}
+
+.choose-app-to-connect .btn {
+    height: 50px;
+    width: 50px;
+}
+
+.choose-app-to-connect {
+    border-radius: 30px;
+    background-color: white;
+}
+
+.app-detail-profile .integrate-apps img {
+    width: 80px;
+}
+
+.app-detail-profile .integrate-apps {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.nav-tabs {
+    border-bottom: 2px solid #dee2e6;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff !important;
+}
+
+.nav-tabs .nav-item .nav-link, .nav-tabs .nav-link {
+    color: #495057;
+}
+
+.app-workflow-items {
+    border-radius: 10px !important;
+}
+
+.app-workflow:hover {
+    text-decoration: none;
+}
+
+
+.modal .close {
+    position: absolute;
+    left: -33px;
+    top: -33px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    height: 30px;
+    width: 30px;
+}
+
+.d-grid {
+    display: grid !important;
+}
+
+.app-details-tabs {
+    grid-area: content;
+}
+
+.owl-carousel .owl-item img {
+    width: 25px !important;
+    display: unset !important;
+}
+
+.app-detail-container {
+    display: grid;
+    grid-template-areas: "content profile "
+"content signup ";
+    grid-template-rows: max-content;
+    grid-gap: 40px;
+    grid-template-columns:3fr 1fr;
+}
+
+.app-detail-profile {
+    grid-area: profile;
+    flex-wrap: wrap;
+}
+
+.app-detail-signup {
+    grid-area: signup;
+}
+
+.app-detail-collapse .integrate-apps .help-center-box-item .reseller-hosting-features .reseller-hosting-features-icon {
+    width: 65px !important;
+    height: 55px !important;
+}
+
+.app-detail-collapse .card-header,
+.app-detail-collapse .card-header .text-dark, .app-detail-collapse .card-header .text-secondary {
+
+    transition: .7s
+}
+
+.app-detail-collapse .card-header:hover .text-dark, .app-detail-collapse .card-header:hover .text-secondary {
+    color: #007bff !important;
+    transition: .7s;
+}
+
+.app-detail-collapse .card-header:hover {
+    transition: .7s;
+    background: #fff !important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    cursor: pointer;
+}
+
+.card-header[aria-expanded=true]:hover {
+    background: #f8f9fa !important;
+    box-shadow: none !important;
+}
+
+.app-detail-collapse .integrate-apps {
+    border-radius: 10px;
+}
+
+.app-detail-collapse .integrate-apps .help-center-box-item {
+    background: unset !important;
+}
+
+.app-detail-collapse .integrate-apps .help-center-box-item:hover {
+    background: unset !important;
+    cursor: unset;
+}
+
+
+.owl-prev, .owl-next {
+    width: 35px;
+    height: 35px;
+    display: flex !important;
+    color: #9f9f9f !important;
+    font-size: 20px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 8px !important;
+    border: 1px solid #ccc !important;
+}
+
+.owl-prev {
+    float: left;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.owl-next {
+    float: right;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.owl-dots {
+    counter-reset: slides-num;
+    /* Initialize counter. */
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owl-dots:after {
+    content: "\00A0" counter(slides-num);
+    font-size: 20px;
+}
+
+.owl-dot {
+    display: inline-block;
+    counter-increment: slides-num;
+    /* Increment counter */
+}
+
+.owl-dot span {
+    visibility: hidden !important;
+}
+
+.owl-dot.active:before {
+    content: counter(slides-num) " از";
+    font-size: 20px;
+}
+
+.owl-theme .owl-nav {
+    position: relative;
+    z-index: 2;
+    direction: ltr;
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+    grid-gap: 85px;
+    justify-content: center;
+}
+
+
+.owl-theme .owl-nav [class*=owl-] {
+    margin: auto !important;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background-color: white !important;
+    border-color: #0069d9 !important;
+    color: #0069d9 !important;
+    transform: scale(1.2, 1.2) !important;
+}
+
+.owl-theme .owl-dots .owl-dot {
+    display: flex !important;
+    justify-content: center;
+    align-items: center
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    display: none !important;
 }
